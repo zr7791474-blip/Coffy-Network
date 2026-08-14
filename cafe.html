@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le café — Coffy° House Casablanca</title>
+<meta name="description" content="Espresso, mokapot, french press, V60 et cold brew — la philosophie café de Coffy° House, Rue Ramallah 07, Abdelmoumen, Casablanca.">
+<meta name="theme-color" content="#542916">
+<link rel="icon" href="public/logo/Coffy.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..800;1,400..800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav" id="mainnav">
+  <div class="nav-inner">
+    <a class="brand-mark" href="index.html">
+      <img class="brand-logo" src="public/logo/Coffy.jpg" alt="Coffy°" width="38" height="38">
+      <span class="word">Coffy°</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" data-page="index">Accueil</a>
+      <a href="menu.html" data-page="menu">Menu</a>
+      <a href="cafe.html" data-page="cafe" class="active">Café</a>
+      <a href="matcha-atay.html" data-page="matcha-atay">Matcha &amp; Crêpes</a>
+      <a href="nous-trouver.html" data-page="nous-trouver">Nous trouver</a>
+    </div>
+    <div class="nav-right">
+      <div class="langswitch" role="group" aria-label="Choix de la langue">
+        <button type="button" data-lang="fr">FR</button><span class="sep">/</span>
+        <button type="button" data-lang="ar">AR</button>
+      </div>
+      <a class="nav-tel" href="tel:+212521165105">+212 5 21 16 51 05</a>
+      <button class="navtoggle" id="navtoggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobilenav">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobilenav" id="mobilenav">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="cafe.html">Café</a>
+    <a href="matcha-atay.html">Matcha &amp; Crêpes</a>
+    <a href="nous-trouver.html">Nous trouver</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobilenav-foot">
+      <div class="langswitch" role="group" aria-label="Choix de la langue">
+        <button type="button" data-lang="fr">FR</button><span class="sep">/</span>
+        <button type="button" data-lang="ar">AR</button>
+      </div>
+      <a class="nav-tel" href="tel:+212521165105" style="color:var(--sub-on-dark);text-decoration:none;">+212 5 21 16 51 05</a>
+    </div>
+  </div>
+</div>
+<div class="lang-note" id="langnote">Cette page est en cours de traduction — le contenu reste en français pour le moment. / هذه الصفحة قيد الترجمة، المحتوى معروض بالفرنسية حاليًا.</div>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Le café</span>
+    <h1>Trois méthodes, un seul geste.</h1>
+    <p>Une carte qui ne change pas selon la mode — espresso, filtre, matcha, brunch et crêpes.</p>
+    <div class="hero-ctas" style="opacity:1;transform:none;margin-top:30px;">
+      <a class="btn btn-fill" href="menu.html">Voir la carte café</a>
+    </div>
+  </div>
+</header>
+
+<section class="section-paper" style="padding-top:70px;">
+  <div class="wrap">
+    <div class="story reveal">
+      <div class="story-img"><img src="public/coffy/3c.jpg" alt="Préparation d'une boisson glacée au comptoir Coffy°" loading="lazy"></div>
+      <div class="story-text">
+        <span class="eyebrow">Origines &amp; torréfaction</span>
+        <h2 class="display">Un blend pour chaque geste.</h2>
+        <p class="sec-body">Un robusta pour le corps et la constance, un arabica pour la finesse aromatique — assemblés puis déclinés selon la méthode. L'espresso reste dense et court&nbsp;; le filtre, en mokapot, french press ou V60, ouvre sur des profils plus fruités quand le grain est single-origine.</p>
+        <div class="story-stats">
+          <div class="story-stat"><b>2</b><span>Blends de base</span></div>
+          <div class="story-stat"><b>3</b><span>Méthodes filtre</span></div>
+          <div class="story-stat"><b>1</b><span>Single-origine</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-paper" style="padding-top:0;">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:60px;" class="reveal">
+      <div>
+        <p style="font-size:1.08rem;line-height:1.75;color:var(--sub-paper);max-width:560px;margin:0 0 20px;">Espresso classique, curtado, macchiato et americano en base. Au-delà, trois méthodes de filtration — mokapot, french press et V60 — chacune déclinée en robusta, arabica ou single-origine. Le cold brew reste en arabica, servi glacé.</p>
+        <p style="font-size:1.08rem;line-height:1.75;color:var(--sub-paper);max-width:560px;">À côté du café, un programme matcha complet et une carte brunch avec crêpes partagent la carte avec jus naturels et laits végétaux.</p>
+      </div>
+      <div>
+        <table class="hours-table" style="border-top:1px solid var(--line);">
+          <tr style="border-top:none;"><td style="border-top:none;">Espresso</td><td style="border-top:none;">17 – 28 MAD</td></tr>
+          <tr><td>Mokapot</td><td>25 – 40 MAD</td></tr>
+          <tr><td>French press</td><td>30 – 45 MAD</td></tr>
+          <tr><td>V60</td><td>35 – 50 MAD</td></tr>
+          <tr><td>Cold brew</td><td>35 MAD</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap">
+    <div class="feature-large reveal">
+      <div class="thumb"><img src="public/hero/hero.jpg" alt="Comptoir et salle Coffy° House, Rue Ramallah, Abdelmoumen" loading="lazy"></div>
+      <div class="body">
+        <span class="eyebrow">Sur place</span>
+        <h3>Un espace pensé pour rester.</h3>
+        <p>Wifi gratuit, prises électriques, paiement carte, vente à emporter, non-fumeur, ouvert 7j/7.</p>
+        <a class="link-arrow terracotta" href="menu.html">Voir la carte →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-roasted">
+  <div class="wrap">
+    <span class="eyebrow">En salle</span>
+    <h2 class="sec-title" style="font-size:clamp(2rem,4vw,3.4rem);margin-bottom:40px;">L'atmosphère Coffy°.</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--line-on-dark);border:1px solid var(--line-on-dark);" class="reveal">
+      <div class="slot" style="aspect-ratio:3/4;border:none;"><img src="public/coffy/esp.jpg" alt="Préparation d'un café filtre au comptoir" loading="lazy"></div>
+      <div class="slot" style="aspect-ratio:3/4;border:none;"><img src="public/coffy/86.jpg" alt="Sélection de cafés de spécialité en fûts, Coffy°" loading="lazy"></div>
+      <div class="slot" style="aspect-ratio:3/4;border:none;"><img src="public/coffy/coffy.jpg" alt="Coin lecture et latte art Coffy° House" loading="lazy"></div>
+    </div>
+    <p style="margin-top:26px;font-size:.9rem;color:var(--sub-on-dark);max-width:560px;line-height:1.7;">Photographies issues du reportage maison Coffy°, Rue Ramallah 07, Abdelmoumen.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-mark">Coffy°</div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Explorer</h4>
+          <a href="index.html">Accueil</a>
+          <a href="menu.html">La carte</a>
+          <a href="matcha-atay.html">Matcha &amp; Crêpes</a>
+          <a href="nous-trouver.html">Nous trouver</a>
+        </div>
+        <div class="foot-col">
+          <h4>Horaires</h4>
+          <span>Tous les jours 07:00–22:00</span>
+        </div>
+        <div class="foot-col">
+          <h4>Contact</h4>
+          <a href="tel:+212521165105">+212 5 21 16 51 05</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=33.57774,-7.6260107" target="_blank" rel="noopener">Itinéraire →</a>
+        </div>
+        <div class="foot-col">
+          <h4>Suivre</h4>
+          <a href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener">Instagram</a>
+          <div class="foot-lang" role="group" aria-label="Choix de la langue" style="margin-top:10px;">
+            <button type="button" data-lang="fr">FR</button>
+            <button type="button" data-lang="ar">AR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Coffy° — Rue Ramallah 07, Abdelmoumen, Casablanca</span>
+      <span>Concept de site indépendant, à partir de la carte réelle et d'informations publiques</span>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+</body>
+</html>

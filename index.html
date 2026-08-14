@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffy° House — Brunch, Café de spécialité, Matcha & Crêpes, Casablanca</title>
+<meta name="description" content="Coffy° House — Brunch, café de spécialité, matcha et crêpes, Rue Ramallah 07, Abdelmoumen, Casablanca. Ouvert 7j/7 de 7h à 22h.">
+<meta property="og:title" content="Coffy° House — Casablanca">
+<meta property="og:description" content="Brunch, café de spécialité, matcha et crêpes — Rue Ramallah 07, Abdelmoumen, Casablanca.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#542916">
+<link rel="icon" href="public/logo/Coffy.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..800;1,400..800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Coffy° House","telephone":"+212521165105","address":{"@type":"PostalAddress","streetAddress":"Rue Ramallah 07, Abdelmoumen","addressLocality":"Casablanca","postalCode":"20340","addressCountry":"MA"},"geo":{"@type":"GeoCoordinates","latitude":33.57774,"longitude":-7.6260107},"url":"https://coffy.network","servesCuisine":["Brunch","Coffee","Matcha","Crêpes"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}]}
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<div class="nav" id="mainnav">
+  <div class="nav-inner">
+    <a class="brand-mark" href="#accueil">
+      <img class="brand-logo" src="public/logo/Coffy.jpg" alt="Coffy°" width="38" height="38">
+      <span class="word">Coffy°</span>
+    </a>
+    <div class="nav-links">
+      <a href="#accueil" data-i18n="nav_accueil">Accueil</a>
+      <a href="#menu" data-i18n="nav_menu">Menu</a>
+      <a href="#experience" data-i18n="nav_cafe">Café</a>
+      <a href="#brunch" data-i18n="nav_brunch">Brunch &amp; Crêpes</a>
+      <a href="#matcha" data-i18n="nav_matcha">Matcha</a>
+      <a href="#visiter" data-i18n="nav_trouver">Nous trouver</a>
+    </div>
+    <div class="nav-right">
+      <div class="langswitch" role="group" aria-label="Choix de la langue">
+        <button type="button" data-lang="fr">FR</button><span class="sep">/</span>
+        <button type="button" data-lang="ar">AR</button>
+      </div>
+      <a class="nav-tel" href="tel:+212521165105">+212 5 21 16 51 05</a>
+      <button class="navtoggle" id="navtoggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobilenav">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="mobilenav" id="mobilenav">
+  <a href="#accueil" data-section data-i18n="nav_accueil">Accueil</a>
+  <a href="#menu" data-section data-i18n="nav_menu">Menu</a>
+  <a href="#experience" data-section data-i18n="nav_cafe">Café</a>
+  <a href="#brunch" data-section data-i18n="nav_brunch">Brunch &amp; Crêpes</a>
+  <a href="#matcha" data-section data-i18n="nav_matcha">Matcha</a>
+  <a href="#visiter" data-section data-i18n="nav_trouver">Nous trouver</a>
+  <div class="mobilenav-foot">
+    <div class="langswitch" role="group" aria-label="Choix de la langue">
+      <button type="button" data-lang="fr">FR</button><span class="sep">/</span>
+      <button type="button" data-lang="ar">AR</button>
+    </div>
+    <a class="nav-tel" href="tel:+212521165105" style="color:var(--sub-dark);">+212 5 21 16 51 05</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="mainhero">
+  <div class="hero-photo">
+    <img src="public/hero/hero.jpg" alt="Comptoir Coffy° House — pyramide de gobelets, machine espresso en laiton et viennoiseries en salle" fetchpriority="high">
+  </div>
+  <div id="accueil" class="hero-inner">
+    <div class="hero-loc" data-i18n="hero_loc">Coffy° House — Rue Ramallah 07, Abdelmoumen, Casablanca</div>
+    <div class="hero-tagline" aria-hidden="false">
+      <span data-i18n="tag_brunch">Brunch</span>
+      <span data-i18n="tag_coffee">Specialty Coffee</span>
+      <span data-i18n="tag_matcha">Matcha</span>
+      <span data-i18n="tag_crepes">Crêpes</span>
+    </div>
+    <h1 class="hero-headline">
+      <span class="ln"><span data-i18n="hero_h1a">Un lieu pour</span></span>
+      <span class="ln"><span class="ln2" data-i18n="hero_h1b">brunch, café</span></span>
+      <span class="ln"><span data-i18n="hero_h1c">et matcha.</span></span>
+    </h1>
+    <svg class="pour-line" viewBox="0 0 180 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M2 4C34 4 30 22 62 22C94 22 90 6 122 6C146 6 148 16 176 16" style="stroke:var(--miel-dore)" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="176" cy="16" r="2.6" style="fill:var(--miel-dore)"/>
+    </svg>
+    <p class="hero-sub" data-i18n="hero_sub">Espresso, méthodes filtre, matcha et crêpes servis dans un espace pensé pour rester — Rue Ramallah 07, Abdelmoumen, Casablanca.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-fill" href="#menu" data-i18n="hero_cta1">Découvrir le menu</a>
+      <a class="btn btn-ghost" href="#visiter" data-i18n="hero_cta2">Nous trouver</a>
+    </div>
+  </div>
+  <div class="hero-strip">
+    <div class="hero-strip-inner">
+      <span data-i18n="hero_strip_addr"><strong>Rue Ramallah 07</strong>, Abdelmoumen, Casablanca</span>
+      <span data-i18n="hero_strip_hours"><strong>7h00 – 22h00</strong> · Ouvert 7j/7</span>
+      <a class="link-arrow" href="#menu" style="color:var(--white);" data-i18n="hero_strip_link">Explorer le menu →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ INTRO ============ -->
+<section class="section-paper" id="intro">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="intro_eyebrow">Depuis Casablanca</span>
+        <h2 class="sec-title" data-i18n="intro_title">Plus qu'un café.</h2>
+      </div>
+      <p class="sec-body reveal" data-i18n="intro_body">Coffy° House est né Rue Ramallah, à Abdelmoumen, avec une idée simple&nbsp;: traiter l'espresso, les méthodes filtre et le brunch avec la même exigence. Un programme matcha construit maison, des crêpes préparées à la commande, et un espace pensé pour qu'on y reste — ouvert 7 jours sur 7, de 7h à 22h.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURES ============ -->
+<section class="section-dark" id="signatures" style="padding-top:0;">
+  <div class="wrap" style="padding-top:100px;">
+    <span class="eyebrow on-dark" data-i18n="sig_eyebrow">Les signatures</span>
+    <h2 class="sec-title" style="font-size:clamp(2rem,3.6vw,3.2rem);margin-bottom:50px;" data-i18n="sig_title">Cinq façons de commencer.</h2>
+  </div>
+  <div class="wrap reveal">
+    <div class="sig-grid">
+      <a class="sig-card big" href="#experience">
+        <img src="public/coffy/esp.jpg" alt="Barista Coffy versant un café filtre en salle" loading="lazy">
+        <div class="sig-body"><span class="sig-tag" data-i18n="sig1_tag">Filtre</span><h3 data-i18n="sig1_name">Café filtre, préparé à la commande</h3><span class="sig-price">25 / 45 MAD</span></div>
+      </a>
+      <a class="sig-card med" href="#matcha">
+        <img src="public/coffy/matchalatte.jpg" alt="Matcha latte fraise, servi en salle chez Coffy°" loading="lazy">
+        <div class="sig-body"><span class="sig-tag" data-i18n="sig2_tag">Matcha</span><h3 data-i18n="sig2_name">Matcha latte fraise</h3><span class="sig-price">55 / 60 MAD</span></div>
+      </a>
+      <a class="sig-card med atay" href="#menu">
+        <img src="public/coffy/1c.jpg" alt="Cocktail de café glacé préparé au comptoir" loading="lazy">
+        <div class="sig-body"><span class="sig-tag" data-i18n="sig3_tag">Signature glacée</span><h3 data-i18n="sig3_name">Café glacé signature</h3><span class="sig-price">35 MAD</span></div>
+      </a>
+      <a class="sig-card small v60" href="#menu">
+        <img src="public/coffy/3c.jpg" alt="Préparation d'une boisson glacée orange au comptoir" loading="lazy">
+        <div class="sig-body"><span class="sig-tag" data-i18n="sig4_tag">Bar</span><h3 data-i18n="sig4_name">Créations du bar</h3><span class="sig-price">40 / 45 MAD</span></div>
+      </a>
+      <a class="sig-card small sweet" href="#brunch">
+        <img src="public/coffy/coffychocolat.jpg" alt="Frappe chocolat Coffy°, garni de chantilly et copeaux de chocolat" loading="lazy">
+        <div class="sig-body"><span class="sig-tag" data-i18n="sig5_tag">Gourmand</span><h3 data-i18n="sig5_name">Frappe chocolat</h3><span class="sig-price">45 MAD</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section-paper" id="menu">
+  <div class="wrap">
+    <div style="max-width:640px;margin-bottom:56px;" class="reveal">
+      <span class="eyebrow" data-i18n="menu_eyebrow">13 familles de boissons</span>
+      <h2 class="sec-title" data-i18n="menu_title">La carte.</h2>
+      <p class="sec-body" style="margin-top:18px;" data-i18n="menu_body">Retranscrite depuis la carte physique affichée en salle, Rue Ramallah 07, Abdelmoumen. Rien d'ajouté, rien d'enlevé — prix en dirhams marocains (MAD), colonnes chaud / glacé quand la boisson existe dans les deux versions.</p>
+    </div>
+    <div class="cat-pills" id="catnav" role="tablist" aria-label="Catégories du menu"></div>
+    <div id="menu-cats"></div>
+  </div>
+</section>
+
+<!-- ============ BRUNCH / MATCHA / CRÊPES ============ -->
+<section class="brunch-band" id="brunch">
+  <div class="wrap" style="padding:100px 0 0;">
+    <span class="eyebrow" data-i18n="brunch_eyebrow">Au-delà du café</span>
+    <h2 class="sec-title" style="margin-bottom:50px;" data-i18n="brunch_title">Brunch, matcha &amp; crêpes.</h2>
+  </div>
+  <div class="wrap" style="padding-bottom:100px;">
+    <div class="brunch-grid reveal">
+      <div class="brunch-panel">
+        <span class="num" data-i18n="brunch1_num">Tous les jours, 7h–22h</span>
+        <h3 data-i18n="brunch1_h">Brunch</h3>
+        <p data-i18n="brunch1_p">Formules salées et sucrées servies toute la journée — œufs, viennoiseries, jus pressés et café à volonté selon la formule choisie.</p>
+      </div>
+      <div class="brunch-panel accent">
+        <span class="num" data-i18n="brunch2_num">Sept versions</span>
+        <h3 data-i18n="brunch2_h">Matcha</h3>
+        <p data-i18n="brunch2_p">Simple, double, caramel, vanille, miel, fruits rouges ou mangue — chaud ou glacé, supplément matcha ou lait végétal disponible.</p>
+      </div>
+      <div class="brunch-panel blue">
+        <span class="num" data-i18n="brunch3_num">Sucrées ou salées</span>
+        <h3 data-i18n="brunch3_h">Crêpes</h3>
+        <p data-i18n="brunch3_p">Préparées à la commande — garnitures classiques ou signature Coffy°, à retrouver dans notre carte brunch en salle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MATCHA HIGHLIGHT ============ -->
+<section class="section-porcelaine" id="matcha">
+  <div class="wrap reveal">
+    <div class="feature-large light" style="border-color:rgba(84,41,22,.22);background:var(--nuage-de-lait);">
+      <div class="thumb"><img src="public/coffy/coffylatte.jpg" alt="Coffy latte et matcha latte servis côte à côte sur un plateau en bois" loading="lazy"></div>
+      <div class="body" style="color:var(--espresso);">
+        <span class="eyebrow" style="color:var(--terre-cuite);" data-i18n="matcha1_tag">I love you so matcha</span>
+        <h3 data-i18n="matcha1_h">Sept versions, chaudes ou glacées.</h3>
+        <p style="color:var(--sub-paper);" data-i18n="matcha1_p">Simple, double, caramel, vanille, miel, fruits rouges, mangue. Supplément matcha ou lait végétal disponible sur toute la gamme.</p>
+        <table class="hours-table" style="max-width:360px;">
+          <tr><td>Matcha latte simple</td><td>55 / 60</td></tr>
+          <tr><td>Matcha double latte</td><td>65 / 70</td></tr>
+          <tr><td>Matcha latte fruits rouges</td><td>75</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COFFEE EXPERIENCE ============ -->
+<section class="section-paper" id="experience">
+  <div class="wrap">
+    <div class="story reveal">
+      <div class="story-img"><img src="public/coffy/esp.jpg" alt="Préparation d'un café filtre au comptoir Coffy°" loading="lazy"></div>
+      <div class="story-text">
+        <span class="eyebrow" data-i18n="exp_eyebrow">Notre approche</span>
+        <h2 class="display" data-i18n="exp_title">Le geste avant tout.</h2>
+        <p class="sec-body" data-i18n="exp_body">Un blend robusta pour le corps, un arabica pour la finesse — assemblés puis servis en plusieurs méthodes de filtration. Rien n'est standardisé&nbsp;: chaque tasse est préparée à la commande, par la même équipe qui prépare le brunch en salle.</p>
+        <div class="story-stats">
+          <div class="story-stat"><b data-i18n="stat1_n">3</b><span data-i18n="stat1_l">Méthodes filtre</span></div>
+          <div class="story-stat"><b data-i18n="stat2_n">7</b><span data-i18n="stat2_l">Variations matcha</span></div>
+          <div class="story-stat"><b data-i18n="stat3_n">7j/7</b><span data-i18n="stat3_l">7h–22h</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO SECTION ============ -->
+<section class="section-roasted" id="video">
+  <div class="wrap">
+    <div class="video-block reveal">
+      <div class="video-frame">
+        <video src="public/vedio/vedio.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Préparation d'une boisson signature au comptoir Coffy°"></video>
+      </div>
+      <div class="video-text">
+        <span class="eyebrow on-dark" data-i18n="vid_eyebrow">Derrière le comptoir</span>
+        <h2 class="display" data-i18n="vid_title">Chaque boisson, préparée sous vos yeux.</h2>
+        <p class="sec-body on-dark" data-i18n="vid_body">Sirops maison, fruits frais et gestes précis — nos baristas composent chaque signature à la commande, du premier trait de couleur à la dernière touche de menthe.</p>
+        <a class="link-arrow on-dark" href="#menu" data-i18n="vid_cta">Voir toutes les créations →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATMOSPHERE GALLERY ============ -->
+<section class="section-dark" id="atmosphere">
+  <div class="wrap">
+    <span class="eyebrow on-dark" data-i18n="atmo_eyebrow">L'expérience Coffy°</span>
+    <h2 class="sec-title" style="font-size:clamp(2rem,3.6vw,3.2rem);margin-bottom:50px;max-width:640px;" data-i18n="atmo_title">Un espace pensé pour rester, pas juste pour passer.</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery">
+      <div class="gallery-item"><img src="public/coffy/esp.jpg" alt="Préparation d'un café filtre, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/coffy/2c.jpg" alt="Café glacé au comptoir, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/hero/hero.jpg" alt="Comptoir Coffy° House en salle, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/coffy/matchalatte.jpg" alt="Matcha latte fraise, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/coffy/4c.jpg" alt="Préparation d'une boisson glacée, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/coffy/3c.jpg" alt="Boisson glacée orange au comptoir, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/coffy/1c.jpg" alt="Café glacé signature, référence visuelle" loading="lazy"></div>
+      <div class="gallery-item"><img src="public/coffy/coffylatte.jpg" alt="Coffy latte et matcha latte, référence visuelle" loading="lazy"></div>
+    </div>
+    <div class="amenities reveal-stagger">
+      <div class="amenity"><span class="glyph"></span><span data-i18n="amenity1">Wifi gratuit</span></div>
+      <div class="amenity"><span class="glyph"></span><span data-i18n="amenity2">Prises électriques</span></div>
+      <div class="amenity"><span class="glyph"></span><span data-i18n="amenity3">Paiement carte</span></div>
+      <div class="amenity"><span class="glyph"></span><span data-i18n="amenity4">À emporter</span></div>
+      <div class="amenity"><span class="glyph"></span><span data-i18n="amenity5">Non-fumeur</span></div>
+      <div class="amenity"><span class="glyph"></span><span data-i18n="amenity6">Ouvert 7j/7</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL STRIP ============ -->
+<section class="section-paper" id="social">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="soc_eyebrow">@coffy.network</span>
+    <h2 class="sec-title" style="margin-bottom:40px;" data-i18n="soc_title">Suivez-nous sur Instagram.</h2>
+  </div>
+  <div class="wrap reveal">
+    <div class="social-grid">
+      <a class="social-item" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+        <img src="public/coffy/coffy.jpg" alt="Coffy° House — informations pratiques partagées sur Instagram" loading="lazy">
+        <svg class="ig-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a class="social-item" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+        <img src="public/coffy/86.jpg" alt="Sélection de cafés de spécialité Coffy°, publiée sur Instagram" loading="lazy">
+        <svg class="ig-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a class="social-item" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+        <img src="public/coffy/bluemint.jpg" alt="Cocktail Blue Mint, publié sur Instagram" loading="lazy">
+        <svg class="ig-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a class="social-item" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+        <img src="public/coffy/coffychocolat.jpg" alt="Frappe chocolat Coffy°, publié sur Instagram" loading="lazy">
+        <svg class="ig-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a class="social-item" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+        <img src="public/coffy/matchalatte.jpg" alt="Matcha latte fraise, publié sur Instagram" loading="lazy">
+        <svg class="ig-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a class="social-item" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+        <img src="public/coffy/coffylatte.jpg" alt="Coffy latte et matcha latte, publié sur Instagram" loading="lazy">
+        <svg class="ig-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOROCCAN IDENTITY ============ -->
+<section class="section-roasted" id="histoire">
+  <div class="wrap">
+    <div class="identity reveal">
+      <h2 class="statement" data-i18n="story_statement">Une expérience pensée ici.</h2>
+      <svg class="motif" viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="10" x2="46" y2="10" style="stroke:var(--miel-dore)" stroke-width="1"/>
+        <path d="M60 2C64 8 64 12 60 18C56 12 56 8 60 2Z" style="fill:var(--bleu-porcelaine)"/>
+        <line x1="74" y1="10" x2="120" y2="10" style="stroke:var(--miel-dore)" stroke-width="1"/>
+      </svg>
+      <p data-i18n="story_body">Coffy° House n'importe pas une esthétique — elle prolonge un geste déjà présent à Casablanca&nbsp;: le café pris debout au comptoir, le brunch partagé sans se presser, des conversations qui durent plus longtemps que la tasse. Le lieu emprunte au vocabulaire local — matériaux bruts, laiton, terre cuite — sans jamais le citer trop fort.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="section-dark" id="visiter">
+  <div class="wrap">
+    <span class="eyebrow on-dark" data-i18n="loc_eyebrow">Casablanca</span>
+    <h2 class="sec-title" style="margin-bottom:50px;" data-i18n="loc_title">Nous trouver.</h2>
+    <div class="location-grid">
+      <div class="reveal">
+        <div class="info-block">
+          <h4 data-i18n="loc_addr_label">Adresse</h4>
+          <p style="font-size:1.1rem;line-height:1.6;margin:0;" data-i18n="loc_addr">Rue Ramallah 07<br>Abdelmoumen<br>Casablanca 20340, Maroc</p>
+          <a class="link-arrow on-dark" style="margin-top:18px;" href="https://www.google.com/maps/dir/?api=1&destination=33.57774,-7.6260107" target="_blank" rel="noopener" data-i18n="loc_itin">Itinéraire →</a>
+        </div>
+        <div class="info-block">
+          <h4 data-i18n="loc_hours_label">Horaires</h4>
+          <table class="hours-table">
+            <tr><td data-i18n="loc_hours_days">Tous les jours</td><td>07:00 – 22:00</td></tr>
+          </table>
+        </div>
+        <div class="info-block">
+          <h4 data-i18n="loc_contact_label">Contact</h4>
+          <a class="contact-line" href="tel:+212521165105">+212 5 21 16 51 05</a>
+          <a class="contact-line" href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener">@coffy.network</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="map-frame">
+          <iframe title="Localisation de Coffy° House, Rue Ramallah, Abdelmoumen, Casablanca" src="https://www.google.com/maps?q=Rue+Ramallah+07+Abdelmoumen+Casablanca&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band section-roasted">
+  <div class="wrap">
+    <h2 data-i18n="cta_text">Passez nous voir. On garde une place au comptoir.</h2>
+    <a class="link-arrow on-dark" href="tel:+212521165105" data-i18n="cta_call">Appeler le café →</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <img src="public/logo/Coffy.jpg" alt="Coffy°">
+          <span class="foot-mark">Coffy°</span>
+        </div>
+        <p class="foot-desc" data-i18n="foot_desc">Brunch, café de spécialité, matcha et crêpes — Rue Ramallah 07, Abdelmoumen, Casablanca. Ouvert 7j/7, 7h–22h.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+        </div>
+        <p class="foot-statement" data-i18n="foot_statement">Brunch. Café. Matcha. Crêpes.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4 data-i18n="foot_explore">Explorer</h4>
+          <a href="#accueil" data-i18n="nav_accueil">Accueil</a>
+          <a href="#menu" data-i18n="nav_menu">Menu</a>
+          <a href="#brunch" data-i18n="nav_brunch">Brunch &amp; Crêpes</a>
+          <a href="#visiter" data-i18n="nav_trouver">Nous trouver</a>
+        </div>
+        <div class="foot-col">
+          <h4 data-i18n="foot_hours">Horaires</h4>
+          <span data-i18n="foot_hours_line">Tous les jours 07:00–22:00</span>
+        </div>
+        <div class="foot-col">
+          <h4 data-i18n="foot_contact">Contact</h4>
+          <a href="tel:+212521165105">+212 5 21 16 51 05</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=33.57774,-7.6260107" target="_blank" rel="noopener" data-i18n="loc_itin">Itinéraire →</a>
+        </div>
+        <div class="foot-col">
+          <h4 data-i18n="foot_legal">Légal</h4>
+          <a href="#" data-i18n="foot_privacy">Confidentialité</a>
+          <a href="#" data-i18n="foot_terms">Conditions générales</a>
+          <div class="foot-lang" role="group" aria-label="Choix de la langue" style="margin-top:14px;">
+            <button type="button" data-lang="fr">FR</button>
+            <button type="button" data-lang="ar">AR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot_bottom1">Coffy° — Rue Ramallah 07, Abdelmoumen, Casablanca</span>
+      <span data-i18n="foot_bottom2">Concept de site indépendant, à partir de la carte réelle et d'informations publiques.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
