@@ -177,13 +177,6 @@ button{ font-family:inherit; cursor:pointer; background:none; border:none; color
 }
 .mobilenav-foot{ margin-top:32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; }
 
-.lang-note{
-  display:none; position:fixed; top:0; left:0; right:0; z-index:199; text-align:center;
-  background:var(--espresso); color:var(--miel-dore); font-family:var(--f-ui); font-size:.72rem; font-weight:600;
-  padding:8px 16px; letter-spacing:.01em;
-}
-.lang-note.show{ display:block; }
-
 /* =====================================================
    HERO
    ===================================================== */

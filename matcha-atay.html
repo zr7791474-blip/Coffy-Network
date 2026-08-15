@@ -5,8 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Matcha &amp; Crêpes — Coffy° House Casablanca</title>
 <meta name="description" content="Programme matcha complet et crêpes préparées à la commande — Coffy° House, Rue Ramallah 07, Abdelmoumen, Casablanca.">
+<meta property="og:title" content="Matcha & Crêpes — Coffy° House Casablanca">
+<meta property="og:description" content="Programme matcha complet et crêpes préparées à la commande — Coffy° House, Casablanca.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coffy.network/matcha-atay.html">
+<meta property="og:image" content="https://coffy.network/public/hero/hero.jpg">
+<meta property="og:locale" content="fr_MA">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#88b8ce">
-<link rel="icon" href="public/logo/Coffy.jpg" type="image/jpeg">
+<link rel="canonical" href="https://coffy.network/matcha-atay.html">
+<link rel="icon" href="public/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="public/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:ital,wght@0,400..800;1,400..800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,11 +30,11 @@
       <span class="word">Coffy°</span>
     </a>
     <div class="nav-links">
-      <a href="index.html" data-page="index">Accueil</a>
-      <a href="menu.html" data-page="menu">Menu</a>
-      <a href="cafe.html" data-page="cafe">Café</a>
-      <a href="matcha-atay.html" data-page="matcha-atay" class="active">Matcha &amp; Crêpes</a>
-      <a href="nous-trouver.html" data-page="nous-trouver">Nous trouver</a>
+      <a href="index.html" data-page="index" data-i18n="nav_accueil">Accueil</a>
+      <a href="menu.html" data-page="menu" data-i18n="nav_menu">Menu</a>
+      <a href="cafe.html" data-page="cafe" data-i18n="nav_cafe">Café</a>
+      <a href="matcha-atay.html" data-page="matcha-atay" class="active" data-i18n="nav_matchacrepes">Matcha &amp; Crêpes</a>
+      <a href="nous-trouver.html" data-page="nous-trouver" data-i18n="nav_trouver">Nous trouver</a>
     </div>
     <div class="nav-right">
       <div class="langswitch" role="group" aria-label="Choix de la langue">
@@ -39,12 +48,12 @@
     </div>
   </div>
   <div class="mobilenav" id="mobilenav">
-    <a href="index.html">Accueil</a>
-    <a href="menu.html">Menu</a>
-    <a href="cafe.html">Café</a>
-    <a href="matcha-atay.html">Matcha &amp; Crêpes</a>
-    <a href="nous-trouver.html">Nous trouver</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav_accueil">Accueil</a>
+    <a href="menu.html" data-i18n="nav_menu">Menu</a>
+    <a href="cafe.html" data-i18n="nav_cafe">Café</a>
+    <a href="matcha-atay.html" data-i18n="nav_matchacrepes">Matcha &amp; Crêpes</a>
+    <a href="nous-trouver.html" data-i18n="nav_trouver">Nous trouver</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
     <div class="mobilenav-foot">
       <div class="langswitch" role="group" aria-label="Choix de la langue">
         <button type="button" data-lang="fr">FR</button><span class="sep">/</span>
@@ -54,15 +63,14 @@
     </div>
   </div>
 </div>
-<div class="lang-note" id="langnote">Cette page est en cours de traduction — le contenu reste en français pour le moment. / هذه الصفحة قيد الترجمة، المحتوى معروض بالفرنسية حاليًا.</div>
 
 <header class="page-head">
   <div class="wrap">
-    <span class="eyebrow">Au-delà du café</span>
-    <h1>Matcha &amp; Crêpes.</h1>
-    <p>Un programme matcha complet, chaud ou glacé, et des crêpes préparées à la commande — sucrées ou salées.</p>
+    <span class="eyebrow" data-i18n="ma_eyebrow">Au-delà du café</span>
+    <h1 data-i18n="ma_h1">Matcha &amp; Crêpes.</h1>
+    <p data-i18n="ma_lead">Un programme matcha complet, chaud ou glacé, et des crêpes préparées à la commande — sucrées ou salées.</p>
     <div class="hero-ctas" style="opacity:1;transform:none;margin-top:30px;">
-      <a class="btn btn-fill" href="menu.html">Voir la carte complète</a>
+      <a class="btn btn-fill" href="menu.html" data-i18n="ma_cta">Voir la carte complète</a>
     </div>
   </div>
 </header>
@@ -72,9 +80,9 @@
     <div class="feature-large light reveal" style="border-color:rgba(84,41,22,.22);background:var(--nuage-de-lait);margin-bottom:1px;">
       <div class="thumb"><img src="public/coffy/matchalatte.jpg" alt="Matcha latte fraise, référence visuelle" loading="lazy"></div>
       <div class="body" style="color:var(--espresso);">
-        <span class="eyebrow" style="color:var(--terre-cuite);">I love you so matcha</span>
-        <h3>Sept versions, chaudes ou glacées.</h3>
-        <p style="color:var(--sub-paper);">Simple, double, caramel, vanille, miel, fruits rouges, mangue. Supplément matcha ou lait végétal disponible sur toute la gamme.</p>
+        <span class="eyebrow" style="color:var(--terre-cuite);" data-i18n="ma_f1_eyebrow">I love you so matcha</span>
+        <h3 data-i18n="ma_f1_h3">Sept versions, chaudes ou glacées.</h3>
+        <p style="color:var(--sub-paper);" data-i18n="ma_f1_body">Simple, double, caramel, vanille, miel, fruits rouges, mangue. Supplément matcha ou lait végétal disponible sur toute la gamme.</p>
         <table class="hours-table" style="max-width:360px;">
           <tr style="border-top:1px solid var(--line);"><td>Matcha latte simple</td><td>55 / 60</td></tr>
           <tr><td>Matcha double latte</td><td>65 / 70</td></tr>
@@ -86,9 +94,9 @@
     <div class="feature-large light reveal" style="border-color:rgba(84,41,22,.22);background:var(--nuage-de-lait);">
       <div class="thumb"><img src="public/coffy/coffychocolat.jpg" alt="Frappe chocolat Coffy°, référence visuelle" loading="lazy"></div>
       <div class="body" style="color:var(--espresso);">
-        <span class="eyebrow" style="color:var(--terre-cuite);">Brunch &amp; crêpes</span>
-        <h3>Crêpes, sucrées ou salées.</h3>
-        <p style="color:var(--sub-paper);">Préparées à la commande — garnitures classiques ou signature Coffy°, servies toute la journée dans le cadre du brunch.</p>
+        <span class="eyebrow" style="color:var(--terre-cuite);" data-i18n="ma_f2_eyebrow">Brunch &amp; crêpes</span>
+        <h3 data-i18n="ma_f2_h3">Crêpes, sucrées ou salées.</h3>
+        <p style="color:var(--sub-paper);" data-i18n="ma_f2_body">Préparées à la commande — garnitures classiques ou signature Coffy°, servies toute la journée dans le cadre du brunch.</p>
         <table class="hours-table" style="max-width:360px;">
           <tr style="border-top:1px solid var(--line);"><td>Crêpe classique</td><td>30 / 40</td></tr>
           <tr><td>Crêpe signature Coffy°</td><td>45 / 55</td></tr>
@@ -101,8 +109,8 @@
 
 <section class="cta-band section-dark" style="padding-top:70px;">
   <div class="wrap">
-    <h2>Voir toute la carte matcha et brunch.</h2>
-    <a class="link-arrow terracotta" href="menu.html">Ouvrir le menu →</a>
+    <h2 data-i18n="ma_cta2_h2">Voir toute la carte matcha et brunch.</h2>
+    <a class="link-arrow terracotta" href="menu.html" data-i18n="ma_cta2_link">Ouvrir le menu →</a>
   </div>
 </section>
 
@@ -112,23 +120,23 @@
       <div class="foot-mark">Coffy°</div>
       <div class="foot-cols">
         <div class="foot-col">
-          <h4>Explorer</h4>
-          <a href="index.html">Accueil</a>
-          <a href="menu.html">La carte</a>
-          <a href="cafe.html">Le café</a>
-          <a href="nous-trouver.html">Nous trouver</a>
+          <h4 data-i18n="foot_explore">Explorer</h4>
+          <a href="index.html" data-i18n="nav_accueil">Accueil</a>
+          <a href="menu.html" data-i18n="nav_menu">La carte</a>
+          <a href="cafe.html" data-i18n="nav_cafe">Le café</a>
+          <a href="nous-trouver.html" data-i18n="nav_trouver">Nous trouver</a>
         </div>
         <div class="foot-col">
-          <h4>Horaires</h4>
-          <span>Tous les jours 07:00–22:00</span>
+          <h4 data-i18n="foot_hours">Horaires</h4>
+          <span data-i18n="foot_hours_line">Tous les jours 07:00–22:00</span>
         </div>
         <div class="foot-col">
-          <h4>Contact</h4>
+          <h4 data-i18n="foot_contact">Contact</h4>
           <a href="tel:+212521165105">+212 5 21 16 51 05</a>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=33.57774,-7.6260107" target="_blank" rel="noopener">Itinéraire →</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=33.57774,-7.6260107" target="_blank" rel="noopener" data-i18n="loc_itin">Itinéraire →</a>
         </div>
         <div class="foot-col">
-          <h4>Suivre</h4>
+          <h4 data-i18n="foot_follow">Suivre</h4>
           <a href="https://www.instagram.com/coffy.network/" target="_blank" rel="noopener">Instagram</a>
           <div class="foot-lang" role="group" aria-label="Choix de la langue" style="margin-top:10px;">
             <button type="button" data-lang="fr">FR</button>
@@ -138,8 +146,8 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>Coffy° — Rue Ramallah 07, Abdelmoumen, Casablanca</span>
-      <span>Concept de site indépendant, à partir de la carte réelle et d'informations publiques</span>
+      <span data-i18n="foot_bottom1">Coffy° — Rue Ramallah 07, Abdelmoumen, Casablanca</span>
+      <span data-i18n="foot_bottom2">Concept de site indépendant, à partir de la carte réelle et d'informations publiques.</span>
     </div>
   </div>
 </footer>
