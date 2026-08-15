@@ -2,7 +2,7 @@
    COFFY° — Brunch | Specialty Coffee | Matcha | Crêpes
    Casablanca — Rue Ramallah 07, Abdelmoumen
    Brand palette: Espresso / Terre Cuite / Miel Doré / Eau Trouble / Bleu Porcelaine / Nuage de Lait
-   Typography: Arial Bold (display) + Inter (UI / body)
+   Typography: Fraunces (editorial display serif) + Inter (UI / body)
    =========================================================== */
 
 :root{
@@ -45,7 +45,7 @@
   --line-on-dark:var(--line-dark);
 
   /* ---- Typography ---- */
-  --f-display:Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --f-display:'Fraunces', Georgia, "Times New Roman", serif;
   --f-ui:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --f-mono:var(--f-ui);
 
@@ -86,7 +86,8 @@ button{ font-family:inherit; cursor:pointer; background:none; border:none; color
   font-family:var(--f-display); font-weight:700;
   font-size:clamp(2rem,4.2vw,3.4rem); line-height:1.06; letter-spacing:-.01em; margin:0;
 }
-.sec-title i{ font-style:normal; color:var(--terre-cuite); }
+.sec-title i{ font-style:italic; font-weight:500; color:var(--terre-cuite); }
+.hero-headline .ln2{ font-style:italic; font-weight:500; }
 .sec-body{ font-size:1.05rem; line-height:1.75; color:var(--sub-paper); max-width:520px; margin:0; }
 .sec-body.on-dark{ color:var(--sub-dark); }
 
